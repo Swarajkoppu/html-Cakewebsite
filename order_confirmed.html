@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="style.css">
+    <title>About us</title>
+</head>
+<body>
+    <nav>
+        <a href="index.html" class="href"><img  id="logo" src="/assets/logo.png" alt="Logo"></a>
+        <a href="cart.html" class="href"><img id="cart" src="/assets/cart.png" alt="Cart"></a>
+        <input type="text" value="Search" id="search">
+        <a href="login.html" class="href"><img id="login" src="/assets/login.png" alt="login"></a>
+        <div class="navbar">
+            <ul>
+                <li><a href="about.html">About us</a></li>
+                <li><a href="bcakes.html">Birthday Cakes</a></li>
+                <li><a href="wcakes.html">Wedding Cakes</a></li>
+                <li><a href="deserts.html">Deserts</a></li>
+                <li><a href="flavours.html">Flavours</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="orderDetailsp">
+        <h1>Order Confirmed</h1>
+        <div id="orderDetails"></div>
+            <p><b>Cake Name:</b><span id="displayVariable1" class="buyname"></span></p>
+            <p><b>Cake price:</b><span id="displayVariable2" class="buyprice"></span></p>
+             <script>
+                const variable1 = localStorage.getItem('variable1');
+                const variable2 = localStorage.getItem('variable2');
+                    if (variable1 && variable2) {
+                        document.getElementById('displayVariable1').textContent = variable1;
+                        document.getElementById('displayVariable2').textContent = variable2;
+                    }
+            </script>
+        <script src="script.js"></script>
+    </div>
+    <button class="return"><a href="index.html">Continue Shopping</a></button>
+</body>
+</html>

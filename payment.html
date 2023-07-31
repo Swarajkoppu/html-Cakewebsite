@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="style.css">
+    <title>About us</title>
+</head>
+<body>
+    <nav>
+        <a href="index.html" class="href"><img  id="logo" src="/assets/logo.png" alt="Logo"></a>
+        <a href="cart.html" class="href"><img id="cart" src="/assets/cart.png" alt="Cart"></a>
+        <input type="text" value="Search" id="search">
+        <a href="login.html" class="href"><img id="login" src="/assets/login.png" alt="login"></a>
+        <div class="navbar">
+            <ul>
+                <li><a href="about.html">About us</a></li>
+                <li><a href="bcakes.html">Birthday Cakes</a></li>
+                <li><a href="wcakes.html">Wedding Cakes</a></li>
+                <li><a href="deserts.html">Deserts</a></li>
+                <li><a href="flavours.html">Flavours</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="payments">
+        <H1>Confirm Your Order </H1>
+        <p>Cake Name:<span id="displayVariable1" class="buyname"></span></p>
+        <p>Cake price <span id="displayVariable2" class="buyprice"></span></p>
+        <form id="cakeDeliveryForm" onsubmit="submitForm(event)">
+            <label for="customerName">Name:</label>
+            <input type="text" id="customerName" required>
+            <br>
+        
+            <label for="email">Email:</label>
+            <input type="email" id="email" required>
+            <br>
+        
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" required>
+            <br>
+        
+            <label for="deliveryDate">Delivery Date:</label>
+            <input type="date" id="deliveryDate" required>
+            <br>
+        
+            <label for="deliveryAddress">Delivery Address:</label>
+            <textarea id="deliveryAddress" required></textarea>
+            <br>
+        
+            <label for="deliveryInstructions">Delivery Instructions:</label>
+            <textarea id="deliveryInstructions"></textarea>
+            <br>
+        
+            <input type="submit" value="Submit">
+          </form>
+          <script src="script.js"></script>
+
+        <script>
+            const variable1 = localStorage.getItem('variable1');
+            const variable2 = localStorage.getItem('variable2');
+            if (variable1 && variable2) {
+                document.getElementById('displayVariable1').textContent = variable1;
+                document.getElementById('displayVariable2').textContent = variable2;
+            }
+        </script>
+    </div>
+</body>
+</html>

@@ -1,0 +1,216 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #ffefef;
+}
+#logo{
+    width:100px;
+    margin-left: 100px;
+    filter: drop-shadow(10px 10px 10px rgb(181, 104, 104));
+}
+#search{
+    position: absolute;
+    height: 40px;
+    text-align: center;
+    margin-left: 15%;
+    margin-top: 50px;
+    width: 50%;
+    background-color: rgba(255, 255, 255, 0.192);
+    border-radius: 15px;
+}
+#login{
+    width: 50px;
+    margin-top: 44px;
+    float:right;
+    margin-right: 20px;   
+}
+#cart{
+    width: 48px;
+    margin-right: 220px;
+    margin-top: 44px;
+    float: right;
+}
+.navbar{
+    background-color:rgb(181, 104, 104);
+    
+    height: 0.8cm;
+}
+.navbar ul{
+    height: 100%;
+}
+.navbar ul li{
+    margin-left: 200px;
+    display: inline;
+    font-size:130%;
+    font-weight: 600;
+    font-size: 0.7cm;
+    float: none;
+}
+nav{
+    margin: 0 !important;
+    position: fixed;
+    width: 100%;
+    background-color: #ffefef;
+    z-index: 1;
+}
+.navbar ul li a{
+    color: #ffefef;
+    text-decoration: none;
+}
+.navbar ul li a:hover{
+    color:rgb(181, 104, 104);
+    background-color: #ffefef;
+    text-decoration: none;
+}
+.show{
+    overflow: hidden;
+    position: absolute;
+    margin-top:180px;
+}
+.cakes {
+    width:80%;
+    margin-left: 3%;
+    position: absolute;
+    margin-top: 180px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); 
+    grid-gap: 20px; 
+    
+}
+.cake-item {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+}
+.aboutus{
+    width:80%;
+    margin-left: 3%;
+    position: absolute;
+    margin-top: 180px;
+}
+.mySlides {
+    position: absolute;
+    margin-top:155px;
+    width: 100%;
+}
+.mySlides img{
+    width: 100%;
+}
+.label{
+    text-align: center;
+    font-style: italic;
+    font-family:cursive;
+    font-size: larger;
+}
+.cost{
+    font-weight:900;
+    font-size: 0.7cm;
+    color: black;
+}
+.buynow{
+    border:0;
+    height:10%;
+    background-color: rgb(181, 104, 104);
+    color:#ffefef;
+}
+.buynow :hover{
+    color: rgb(181, 104, 104);
+    background-color:#ffefef;
+}
+.cakesindex1 {
+    width:80%;
+    margin-left: 3%;
+    position: absolute;
+    margin-top: 750px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); 
+    grid-gap: 20px;    
+}
+.cakesindex2 {
+    width:80%;
+    margin-left: 3%;
+    position: absolute;
+    margin-top: 1250px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); 
+    grid-gap: 20px;    
+}
+#birthdaylabel{
+    position: absolute;
+    text-align: center;
+    font-style: italic;
+    font-family:cursive;
+    font-size: 1cm;
+    margin-top: 700px;
+    width: 50%;
+    margin-left:25% ;
+}
+#weddinglabel{
+    position: absolute;
+    text-align: center;
+    font-style: italic;
+    font-family:cursive;
+    font-size: 1cm;
+    margin-top: 1200px;
+    width: 50%;
+    margin-left:25% ;
+}
+.payments{
+    width:80%;
+    margin-left: 25%;
+    position: absolute;
+    margin-top: 280px;
+    width: 50%;
+    font-weight: 600;
+    font-size: 1cm;
+    color:#ffefef;
+    background-color: rgb(181, 104, 104) ;
+}
+.cake-item button{
+    border: 0;
+    height: 50px;
+    width: 100px;
+    border-radius: 25px;
+    color:#ffefef ;
+    font-weight: 900;
+    background-color:rgb(181, 104, 104) ;
+}
+.orderDetailsp{
+    position: absolute;
+    margin-top: 200px;
+    margin-left: 25%;
+    width: 50%;
+    font-size: 1cm;
+    color: #ffefef;
+    background-color: rgb(181, 104, 104);
+}
+.orderDetailsp h1{
+    color: rgb(181, 104, 104);
+    background-color: #ffefef;
+}
+.payments h1{
+    color: rgb(181, 104, 104);
+    background-color: #ffefef;
+}
+.return{
+    position: absolute;
+    margin-top: 800px;
+    margin-left: 25%;
+    border: 0;
+    width: 300px;
+    font-size: 0.5cm;
+    border-radius: 25px;
+    color: #ffefef;
+    height: 60px;
+    background-color: rgb(181, 104, 104);
+}
+.return :hover{
+    color: rgb(181, 104, 104);
+    background-color: #ffefef;
+}
+.return a{
+    color: #ffefef;
+    text-decoration: none;
+}
